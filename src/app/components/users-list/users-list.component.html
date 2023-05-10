@@ -1,0 +1,11 @@
+<p>List of users</p>
+<ol>
+  <li *ngFor="let user of users">
+    <h3>
+      <app-user-preview
+      [user]="user"
+      (selektovan)="onUserSelect($event)">
+      </app-user-preview>
+    </h3>
+  </li>
+</ol>

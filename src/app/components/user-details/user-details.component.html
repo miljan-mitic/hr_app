@@ -1,0 +1,11 @@
+<p>user-details works!</p>
+<span *ngIf="user">
+  <h3>{{user.firstName}} {{user.lastName}}</h3>
+  <img class="avatar" src="{{user.image}}">
+  <div class="details">
+    <p>{{user.username}}</p>
+    <p>{{user.email}}</p>
+    <p>{{user.age}}</p>
+  </div>
+</span>
+{{userId$ | async}}

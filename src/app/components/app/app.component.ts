@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hr_app';
+  currentUser?: User;
+
+  onUserSelected(user: User) {
+    this.currentUser = user;
+  }
 }
